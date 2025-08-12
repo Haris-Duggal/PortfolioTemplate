@@ -436,3 +436,70 @@ body {
 .portrait img {
   animation: img 1s;
 }
+
+@media (max-width: 1200px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .col-1-row-1 {
+    width: 100%;
+  }
+  .intro {
+    max-width: 60vw;
+  }
+
+  .portrait {
+    width: 30vw;
+  }
+
+  .about {
+    max-width: 43vw;
+  }
+
+  .contact {
+    width: 43vw;
+  }
+
+  .main-col-2 {
+    width: 99.5%;
+    margin-left: 0%;
+    margin-top: 24px;
+  }
+
+  .slogan {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 710px) {
+  .col-1-row-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col-1-row-2 {
+    flex-direction: column;
+  }
+
+  .intro {
+    max-width: 99.5%;
+    max-height: fit-content;
+    margin-bottom: 24px;
+  }
+
+  .portrait {
+    width: 60vw;
+    margin-left: 0%;
+  }
+
+  .about {
+    max-width: 99.5%;
+    margin-bottom: 24px;
+  }
+
+  .contact {
+    width: 92%;
+    margin-left: 0%;
+  }
+}
