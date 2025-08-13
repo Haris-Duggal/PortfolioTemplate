@@ -164,7 +164,15 @@ body {
 
 .svg-row {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.moving-ball {
+  width: 50px;
+  height: 50px;
+  background-color: #7096c7;
+  border-radius: 50%;
 }
 
 .intro {
@@ -256,7 +264,7 @@ body {
 }
 
 .contact h1 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 50px;
 }
 
@@ -406,6 +414,20 @@ body {
   100% {
     display: block;
   }
+}
+
+@keyframes ball {
+  0% {
+  }
+  50% {
+    transform: translateX(1300%);
+  }
+  100% {
+  }
+}
+
+.moving-ball {
+  animation: ball 5s ease-in-out infinite;
 }
 
 .portrait {
