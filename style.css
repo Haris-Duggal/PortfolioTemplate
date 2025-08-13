@@ -473,6 +473,9 @@ body {
 }
 
 @media (max-width: 710px) {
+  .grid {
+    width: 90%;
+  }
   .col-1-row-1 {
     flex-direction: column;
     align-items: center;
@@ -480,10 +483,16 @@ body {
 
   .col-1-row-2 {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .main-col-2 {
+    flex-direction: column;
+    align-items: center;
   }
 
   .intro {
-    max-width: 99.5%;
+    max-width: 90%;
     max-height: fit-content;
     margin-bottom: 24px;
   }
@@ -499,7 +508,7 @@ body {
   }
 
   .contact {
-    width: 92%;
+    width: 88%;
     margin-left: 0%;
   }
 }
